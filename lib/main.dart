@@ -1,4 +1,5 @@
 import 'package:audio_player/pages/home_page/home_page.dart';
+import 'package:audio_player/theme/dark_mode.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -11,8 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return  MaterialApp(
+      home: const HomePage(),
+      theme: darkMode,
     );
   }
 }

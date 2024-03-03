@@ -11,13 +11,13 @@ class MyDrawer extends StatelessWidget {
         children: [
           const DrawerHeader(child: Icon((Icons.music_note))),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text("Home"),
+            leading: const Icon(Icons.home),
+            title: const Text("Home"),
             onTap: (){},
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text("Setting"),
+            leading: const Icon(Icons.settings),
+            title:const Text("Setting"),
             onTap: (){},
           ),
         ],
