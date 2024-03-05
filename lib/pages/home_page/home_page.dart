@@ -1,4 +1,4 @@
-import 'package:audio_player/pages/drawer/widget/my_drawer.dart';
+import 'package:audio_player/pages/drawer/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

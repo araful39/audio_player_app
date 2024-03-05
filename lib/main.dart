@@ -1,9 +1,11 @@
+
+import 'package:audio_player/pages/controller/theme_provider.dart';
 import 'package:audio_player/pages/home_page/home_page.dart';
-import 'package:audio_player/theme/dark_mode.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main(){
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(create: (context)=>ThemeProvider(),child: const MyApp(),));
 }
 
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home: const HomePage(),
-      theme: darkMode,
+      theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
 }
