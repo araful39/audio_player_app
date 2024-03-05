@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     return  Scaffold(
       drawer: const MyDrawer(),
       appBar: AppBar(
-        title: const Text("Audio Player"),
+        title: const Text("P L A Y L I S T"),
       ),
       body: const Center(
         child: Text("Song"),
