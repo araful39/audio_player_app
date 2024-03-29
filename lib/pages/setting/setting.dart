@@ -1,4 +1,5 @@
 import 'package:audio_player/pages/controller/theme_provider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -10,7 +11,7 @@ class SettingPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Setting"),
+        title: const Text("S E T T I N G S"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -21,7 +22,9 @@ class SettingPage extends StatelessWidget {
             child: Row(
               children: [
                 const Text("Dark Mode"),
-              Switch(
+              CupertinoSwitch(
+                trackColor: Colors.green,
+                activeColor: Colors.orange,
                     value:
                         Provider.of<ThemeProvider>(context, listen: false).isDarkMode,
                     onChanged: (value){
